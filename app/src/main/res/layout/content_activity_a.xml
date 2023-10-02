@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="1"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="50dp"
+            android:weightSum="1">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="113dp"
+                app:srcCompat="@drawable/logo"
+                android:id="@+id/imageView" />
+
+            <TextView
+                android:text="@string/txt_activity_a"
+                android:layout_width="wrap_content"
+                android:layout_height="113dp"
+                android:id="@+id/textView2"
+                android:textSize="36sp"
+                android:paddingTop="40dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:layout_width="match_parent">
+
+            <Button
+                android:text="@string/btn_start_activity_b"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/button4"
+                android:background="@color/colorAccent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:onClick="GotoActivityB"/>
+
+            <Button
+                android:text="@string/btn_start_activity_c"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/button6"
+                android:background="@color/colorAccent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:onClick="GotoActivityC"/>
+
+            <Button
+                android:text="@string/btn_dialog"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:id="@+id/button5"
+                android:layout_weight="1"
+                android:background="@android:color/holo_blue_bright"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:onClick="GotoDialog"/>
+
+        </LinearLayout>
+
+
+
+
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginTop="50dp"
+            android:layout_weight="0.33"
+            android:weightSum="1">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="49dp">
+
+                <TextView
+                    android:text="@string/txt_thread_count"
+                    android:layout_width="203dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/textView3"
+                    android:textSize="20dp"
+                    android:textAlignment="textEnd" />
+
+                <TextView
+                    android:id="@+id/threadCount"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/txt_default_thread_count"
+                    android:textAlignment="center"
+                    android:textSize="20dp" />
+
+            </LinearLayout>
+
+            <Button
+                android:text="@string/btn_close_app"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/button10"
+                android:onClick="CloseApp"/>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

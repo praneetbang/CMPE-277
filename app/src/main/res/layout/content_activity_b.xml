@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                android:src="@drawable/logo"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/txt_activity_b"
+                android:id="@+id/activityB_title"
+                android:textSize="30dp"
+                android:paddingTop="20dp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:text="@string/txt_activity_b_content"
+            android:layout_marginTop="50dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingLeft="10dp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:layout_centerHorizontal="true"
+            android:textAllCaps="false"
+            android:text="@string/btn_finish_app"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingRight="25dp"
+            android:paddingLeft="25dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="50dp"
+            android:onClick="finishB"/>
+
+    </LinearLayout>
+</LinearLayout>

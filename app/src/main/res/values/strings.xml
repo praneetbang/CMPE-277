@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">HW2_ActivityLifeCycle</string>
+
+    <string name="txt_activity_a">Activity A</string>
+    <string name="btn_start_activity_b">Start Activity B</string>
+    <string name="btn_start_activity_c">Start Activity C</string>
+    <string name="btn_dialog">Dialog</string>
+    <string name="btn_close_app">Close App</string>
+    <string name="txt_thread_count">Thread Count:</string>
+    <string name="txt_default_thread_count">0000</string>
+
+    <string name="txt_activity_b">Activity B</string>
+    <string name="txt_activity_c">Activity C</string>
+    <string name="txt_activity_b_content">
+        Activity B occupies the complete window real-state. The Android OS forces Activity
+        A to be Paused. However, the background thread keep incrementing the counter.
+    </string>
+
+    <string name="txt_activity_c_content">
+        Activity C occupies the complete window real-state. The Android OS forces Activity
+        A to be Paused. However, the background thread keep incrementing the counter.
+    </string>
+    <string name="btn_finish_app">Finish App</string>
+
+    <string name="txt_simple_dialog">Simple Dialog</string>
+</resources>
