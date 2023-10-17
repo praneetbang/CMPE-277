@@ -85,7 +85,7 @@ public class MainActivity extends AppCompatActivity {
 
     public static String chatGPT(String prompt) {
         String url = "https://api.openai.com/v1/chat/completions";
-        String apiKey = "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";
+        String apiKey = "/* Put your api key here */";
         String model = "gpt-3.5-turbo";
 
         try {
